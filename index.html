@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">TRAVEL</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <!-- Tombol Slide Kiri & Kanan -->
+  <button class="slider-arrow left" onclick="prevSlide()" aria-label="Sebelumnya">&#10094;</button>
+  <button class="slider-arrow right" onclick="nextSlide()" aria-label="Selanjutnya">&#10095;</button>
+
+  <section class="hero" id="home">
+    <div class="video-slider">
+      <video src="videos/pantai dewata.mp4" autoplay muted loop class="active"></video>
+      <video src="videos/gunung ijen.mp4" autoplay muted loop></video>
+      <video src="videos/raja empat.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="slider-caption">
+      <div class="caption active">
+        <h1>Pantai Pandawa</h1>
+        <p>Pantai Pandawa terletak di selatan bali, yang diapit oleh tebing tebing batu kapur tinggi yang membuatnya
+          sepertai pantai tersembunyi.</p>
+        <p>pantai ini memiliki pasir putih lembut yabg cocok untuk bersantai. Airnya yang jernih dan ombak yang tenang
+          manjadikan pentai pandawa tempat yang sempurna untuk berenang.</p>
+      </div>
+      <div class="caption">
+        <h1>Gunung Ijen</h1>
+        <p>Gunung Ijen adalah gunung berapi yang terletak di perbatasan kabupaten banyuwangi dan bondowoso, Jawa Timur.
+          Gunung ini memiliki ketinggian 2.386 mdpl.
+          salah satu fenomena alam yang paling terkenal di gunung ijen adalah blue fire .</p>
+      </div>
+      <div class="caption">
+        <h1>Raja Ampat</h1>
+        <p>Kepulauan raja ampat terletak di barat bagian semenanjung kepala burung pulau papaua. tempat ini menjadi
+          tujuan para penyelam yang tertarik akan keindahan pemandangan bawah</p>
+      </div>
+    </div>
+
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+  
+<section class="gallery" id="gallery">
+  <h2>Gallery</h2>
+  <div class="img-with-text">
+    <div class="img-row">
+      <img src="images/pandawa1.jpg" alt="Pantai Pandawa 1">
+      <img src="images/pandawa2.jpg" alt="Pantai Pandawa 2">
+    </div>
+    <p>Pantai Pandawa</p>
+  </div>
+  <div class="img-with-text">
+    <div class="img-row">
+      <img src="images/kawah_ijen1.jpg" alt="Kawah Ijen 1">
+      <img src="images/kawah_ijen2.jpg" alt="Kawah Ijen 2">
+    </div>
+    <p>Kawah Ijen</p>
+  </div>
+  <div class="img-with-text">
+    <div class="img-row">
+      <img src="images/raja_ampat1.jpg" alt="Raja Ampat 1">
+      <img src="images/raja_ampat2.jpg" alt="Raja Ampat 2">
+    </div>
+    <p>Raja Ampat</p>
+  </div>
+</section>
+
+ <section class="about" id="about">
+  <h2>Tentang Kita</h2>
+  <div class="about-container">
+    <img src="images/webcam-toy-photo3.jpg" alt="Foto Kelompok" class="about-photo">
+    <div class="about-text">
+      <h3>Kelompok 5 - Wisata Nusantara</h3>
+      <ul class="about-list">
+        <li><span>Anggi Artalita</span> <em>– Ketua</em></li>
+        <li><span>Delva Anggun</span> <em>– Wakil Ketua</em></li>
+        <li><span>Evita Zhahra</span> <em>– Sekretaris</em></li>
+        <li><span>Quinsha Anggun</span> <em>– Anggota</em></li>
+      </ul>
+      <p class="about-desc">
+        Kami adalah kelompok yang bersemangat mempromosikan keindahan wisata Indonesia melalui website interaktif dan informatif. Terima kasih telah mengunjungi situs kami!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p><a href="mailto:dufanpembaik@gmail.com">dufanpembaik@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>Instagram</h3>
+      <p><a href="https://instagram.com/ofe.rly" target="_blank">@ofe.rly</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>WhatsApp</h3>
+      <p><a href="https://wa.me/+62 858-9605-0581" target="_blank">+62 858-9605-0581</a></p>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
